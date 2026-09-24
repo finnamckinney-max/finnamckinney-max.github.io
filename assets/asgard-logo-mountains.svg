@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#1a2446"/>
+      <stop offset="1" stop-color="#0a0f1f"/>
+    </radialGradient>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="112" x2="0" y2="912">
+      <stop offset="0" stop-color="#ecd48a"/>
+      <stop offset="1" stop-color="#b8923a"/>
+    </linearGradient>
+    <clipPath id="inner"><circle cx="512" cy="512" r="370"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" rx="200" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- rings + ticks -->
+    <circle cx="512" cy="512" r="400" stroke-width="18"/>
+    <circle cx="512" cy="512" r="370" stroke-width="6" opacity=".55"/>
+    <g stroke-width="16">
+      <line x1="512" y1="112" x2="512" y2="150"/><line x1="512" y1="874" x2="512" y2="912"/>
+      <line x1="112" y1="512" x2="150" y2="512"/><line x1="874" y1="512" x2="912" y2="512"/>
+    </g>
+    <g stroke-width="9" opacity=".8">
+      <line x1="229" y1="229" x2="252" y2="252"/><line x1="795" y1="229" x2="772" y2="252"/>
+      <line x1="229" y1="795" x2="252" y2="772"/><line x1="795" y1="795" x2="772" y2="772"/>
+    </g>
+
+    <g clip-path="url(#inner)">
+      <!-- distant range (behind) -->
+      <path d="M150 640 L300 470 L380 540 L470 430 L560 520 L660 410 L760 520 L880 600" stroke-width="9" opacity=".45"/>
+      <!-- main range -->
+      <path d="M140 700 L330 460 L420 560 L512 300 L640 520 L700 450 L884 700" stroke-width="18"/>
+      <!-- snow caps -->
+      <path d="M484 380 L500 400 L515 377 L532 402 L559 380" stroke-width="12"/>
+      <path d="M298 500 L316 518 L333 498 L350 518 L366 500" stroke-width="10"/>
+      <path d="M674 480 L690 497 L706 478 L722 482" stroke-width="10"/>
+      <!-- ground lines -->
+      <path d="M170 700 H854" stroke-width="16"/>
+      <path d="M230 740 H794" stroke-width="10" opacity=".7"/>
+      <path d="M300 776 H724" stroke-width="7" opacity=".45"/>
+    </g>
+  </g>
+  <!-- star above the tallest peak -->
+  <g fill="#ecd48a">
+    <path d="M512 196 L522 226 L552 236 L522 246 L512 276 L502 246 L472 236 L502 226 Z"/>
+  </g>
+  <circle cx="380" cy="300" r="6" fill="#ecd48a" opacity=".7"/>
+  <circle cx="660" cy="270" r="5" fill="#ecd48a" opacity=".6"/>
+  <circle cx="740" cy="340" r="4" fill="#ecd48a" opacity=".5"/>
+</svg>
