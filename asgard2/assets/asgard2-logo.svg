@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- ASGARD v2 logo (option C+D 2, docs/mockups/logo-v2.html): towers under a bright aurora in a v2 panel frame. -->
+  <defs>
+    <linearGradient id="au" x1="0" x2="1">
+      <stop offset="0" stop-color="#5EE6E0" stop-opacity="0"/><stop offset=".3" stop-color="#5EE6E0"/>
+      <stop offset=".7" stop-color="#9B8CFF"/><stop offset="1" stop-color="#9B8CFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0" stop-color="#5EE6E0" stop-opacity=".22"/><stop offset=".5" stop-color="#9B8CFF" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#9B8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="sq"><rect x="124" y="124" width="776" height="776"/></clipPath>
+    <radialGradient id="bg" cx="50%" cy="38%" r="72%">
+      <stop offset="0" stop-color="#16244a"/><stop offset=".6" stop-color="#0a1226"/><stop offset="1" stop-color="#02050d"/>
+    </radialGradient>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="112" x2="0" y2="912">
+      <stop offset="0" stop-color="#F2E6C4"/><stop offset=".45" stop-color="#E6C470"/><stop offset="1" stop-color="#B8923A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="60" fill="url(#bg)"/>
+  <!-- aurora behind the towers -->
+  <g clip-path="url(#sq)">
+    <rect x="120" y="120" width="784" height="784" fill="url(#glow)"/>
+    <g fill="none" stroke="url(#au)" stroke-linecap="round">
+      <path d="M80 400 C280 290 420 460 560 350 S820 290 950 370" stroke-width="110" opacity=".3"/>
+      <path d="M80 480 C280 380 440 520 600 420 S830 380 950 450" stroke-width="50" opacity=".45"/>
+      <path d="M80 540 C300 470 460 580 620 500 S840 470 950 520" stroke-width="22" opacity=".35"/>
+    </g>
+  </g>
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- panel frame + corner marks -->
+    <rect x="120" y="120" width="784" height="784" stroke-width="7" opacity=".55"/>
+    <path d="M108 250 V108 H250 M916 774 V916 H774" stroke-width="26" stroke-linecap="square"/>
+    <!-- constellation lines -->
+    <path d="M250 300 L372 250 L450 300 M574 300 L668 232 L770 290" stroke-width="5" opacity=".45"/>
+    <!-- far towers -->
+    <g stroke-width="9" opacity=".45" fill="#0b1430">
+      <path d="M196 700 V590 L220 540 L244 590 V700"/><path d="M780 700 V590 L804 540 L828 590 V700"/>
+    </g>
+    <!-- main towers + walls -->
+    <g fill="#0b1430">
+      <path d="M300 700 V505 L318 490 V458 L345 372 L372 458 V490 L390 505 V700" stroke-width="16"/>
+      <path d="M634 700 V505 L652 490 V458 L679 372 L706 458 V490 L724 505 V700" stroke-width="16"/>
+      <path d="M390 700 V610 H452 M572 610 H634 V700" stroke-width="12"/>
+      <path d="M452 700 V420 L474 400 V355 L512 238 L550 355 V400 L572 420 V700" stroke-width="18"/>
+    </g>
+    <path d="M512 470 V540 M345 540 V585 M679 540 V585" stroke-width="12"/>
+    <path d="M474 400 H550 M318 490 H372 M652 490 H706" stroke-width="8" opacity=".7"/>
+    <!-- ground -->
+    <path d="M170 700 H854" stroke-width="16"/>
+    <path d="M230 740 H794" stroke-width="10" opacity=".7"/>
+    <path d="M300 776 H724" stroke-width="7" opacity=".45"/>
+  </g>
+  <!-- star over the tallest tower + constellation stars -->
+  <path fill="#F2E6C4" d="M512 146 L520.5 171.5 L546 180 L520.5 188.5 L512 214 L503.5 188.5 L478 180 L503.5 171.5 Z"/>
+  <g fill="#F2E6C4">
+    <circle cx="250" cy="300" r="7"/><circle cx="372" cy="250" r="9"/><circle cx="450" cy="300" r="6"/>
+    <circle cx="574" cy="300" r="6"/><circle cx="668" cy="232" r="9"/><circle cx="770" cy="290" r="7"/>
+  </g>
+</svg>

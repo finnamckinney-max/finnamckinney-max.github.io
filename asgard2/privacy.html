@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASGARD 2 Privacy Policy</title>
+  <meta name="description" content="Privacy policy for ASGARD 2, a private, single-person investment dashboard.">
+  <link rel="icon" type="image/svg+xml" href="assets/asgard2-logo.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/asgard2-logo-64.png">
+  <link rel="apple-touch-icon" href="assets/asgard2-logo-512.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img class="logo" src="assets/asgard2-logo-512.png" alt="ASGARD 2 logo" width="88" height="88">
+    <div><h1>ASGARD 2</h1><div class="tag">Privacy Policy · Last updated November 19, 2026</div></div>
+  </header>
+
+  <p class="lead">ASGARD 2 is a personal investment dashboard built and operated by Finn McKinney. It is
+  used by one person, its owner, to view the owner's own Fidelity Roth IRA. It is not offered to the
+  public and does not collect data from any other individual.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>What data is collected</h2>
+      <p>ASGARD 2 connects one account — the owner's Fidelity Roth IRA — through Plaid Technologies, Inc.
+      ("Plaid"), using Plaid's read-only Investments product. Through Plaid it receives:</p>
+      <ul>
+        <li>the account's name, type and last digits;</li>
+        <li>holdings: securities, share quantities, prices, values and cost basis;</li>
+        <li>investment transactions: buys, sells, dividends, interest, fees and contributions.</li>
+      </ul>
+      <p>It does not connect bank or credit-card accounts, and it does not request identity, account
+      and routing numbers, or payment access. The Fidelity login is entered only into Plaid's and
+      Fidelity's interfaces and is never seen or stored by ASGARD 2. The owner also loads statement
+      files downloaded from Fidelity, which are treated the same way. Plaid's handling of data is
+      described in <a href="https://plaid.com/legal/#end-user-privacy-policy">Plaid's End User Privacy Policy</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>How it is used</h2>
+      <p>The data is used only to show the owner their own holdings, value over time, contributions and
+      returns; to check Plaid's data against Fidelity's own statements; and to support the owner's own
+      investment research. It is not used for advertising, marketing, credit decisions or profiling,
+      and it is never sold or rented.</p>
+    </section>
+
+    <section class="card">
+      <h2>Services involved</h2>
+      <ul>
+        <li><strong>Plaid</strong> provides the read-only connection to the account.</li>
+        <li><strong>Yahoo Finance</strong> supplies public market prices and news headlines. Only ticker
+        symbols are sent; no account information.</li>
+        <li><strong>Anthropic (Claude)</strong> writes market summaries and research notes through the
+        owner's own API account. Market summaries use public market data only. When the owner asks for
+        analysis of their own portfolio, the holdings involved may be included. Login credentials and
+        Plaid access tokens are never sent.</li>
+      </ul>
+      <p>No other party receives the data.</p>
+    </section>
+
+    <section class="card">
+      <h2>Security</h2>
+      <ul>
+        <li>Runs only on the owner's personal computer and accepts connections only from that computer;
+        it is not reachable from the internet.</li>
+        <li>Opening ASGARD 2 requires the owner's Windows Hello sign-in, and it locks itself when left idle.</li>
+        <li>The whole database is encrypted; the Plaid access token and other keys are encrypted with a
+        key protected by Windows.</li>
+        <li>Linking or unlinking the account requires the owner to confirm with their PIN, and every such
+        change is recorded in a security log.</li>
+        <li>Data is encrypted in transit, and related online accounts use unique passwords and
+        multi-factor authentication.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Retention and deletion</h2>
+      <p>The account's records are kept as the owner's own financial history for as long as the owner
+      uses ASGARD 2. Encrypted backups are kept on a fixed schedule — daily backups for 7 days, weekly
+      for 4 weeks and monthly for 12 months — and older ones are deleted automatically.</p>
+      <p>When the account is unlinked, ASGARD 2 deletes its Plaid access token and asks Plaid to close the
+      connection, so no further data is received. Records already received remain part of the owner's
+      history unless the owner deletes them. Access can also be removed at any time through
+      <a href="https://my.plaid.com">Plaid Portal</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact and changes</h2>
+      <p>Questions about this policy or about data handled by ASGARD 2:
+      <a href="mailto:asgardadmin2026@gmail.com">asgardadmin2026@gmail.com</a>. Data is deleted on
+      request.</p>
+      <p>If this policy changes, the updated version and its date will be posted at this address.</p>
+    </section>
+  </div>
+
+  <footer>
+    <span><a href="index.html">← ASGARD 2</a></span>
+    <span>ASGARD 2 · Personal project of Finn McKinney</span>
+  </footer>
+</main>
+</body>
+</html>
